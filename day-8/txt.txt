@@ -1,0 +1,4 @@
+password - sdv24
+
+
+mongodb+srv://sdv:SDVERMA@cluster.uxdgmsr.mongodb.net/
