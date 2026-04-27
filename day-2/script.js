@@ -3,7 +3,7 @@ const express = require('express');
 const app = express(); // instance of server created
 
 app.get('/', (req, res) => {
-  res.send('Hello World!!'); // response sent to client
+  res.send('Hello World!'); // response sent to client
 });
 
 app.get('/about', (req, res) => {
