@@ -1,4 +1,4 @@
-const app = require('./src/app');
+const app = require('./src/app')
 
 const notes = [];
 
@@ -19,6 +19,6 @@ app.delete("/notes/:index",(req,res) => {
 });
 
 
-app.listen(3000, () => {
-    console.log('Server started at port 3000');
-});
+app.listen(3000,()=>{
+    console.log("Server is running on port 3000");
+})

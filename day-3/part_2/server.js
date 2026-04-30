@@ -3,10 +3,6 @@ const app = express();
 
 app.use(express.json());  // middleware
 
-app.get('/hello', (req, res) => {
-  res.send('Hello, SDV');
-});
-
 const notes = [];
 
 app.post("/notes", (req, res) => {
@@ -18,6 +14,8 @@ app.post("/notes", (req, res) => {
 app.get("/notes", (req, res) => {
   res.send(notes);
 });
+
+
 
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
