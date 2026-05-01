@@ -14,10 +14,14 @@ app.get("/notes",(req,res) => {
 
 app.delete("/notes/:index",(req,res) => {
     delete notes[req.params.index];
-    console.log(req.params);
+    console.log(req.params);    
     res.send("Note deleted successfully");
 });
 
+app.patch("/notes/:index",(req,res)=>{
+    notes[req.params.index].description = req.body.description;
+    res.send("Update Successfully");
+})
 
 
 app.listen(3000,()=>{
