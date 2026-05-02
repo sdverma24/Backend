@@ -4,7 +4,9 @@ const app = require('./src/app')
 const notes = [];
 
 app.get("/notes", (req, res) => {
-    res.send(notes);
+    res.status(200).json({
+        notes:notes
+    })
 });
 
 
