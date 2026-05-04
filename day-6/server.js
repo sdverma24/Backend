@@ -3,14 +3,15 @@
 const app = require('./src/app');
 const mongoose = require('mongoose');
 
-function connectToDatabase() {
-    mongoose.connect("mongodb+srv://SDV:sdv2407@cluster0.xijdxok.mongodb.net/day-6").then(() => {
-        console.log("Connected to database");
-    });
+function connecttoDB(){
+    mongoose.connect("mongodb+srv://SDV:SDV2424@cohort.xgsrr7a.mongodb.net/").then(()=>{
+        console.log("Connected to Database");
+    })
 }
 
-connectToDatabase();
+connecttoDB();
 
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
+
